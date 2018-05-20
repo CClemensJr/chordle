@@ -1,0 +1,39 @@
+Chordle
+
+Minimum Viable Product
+* User is able to log in and log out.
+* User is able to add pre-configured chores to a list.
+* User is able to set the priority for each chore.
+* User is able to set the estimated time for completion of each chore.
+* User is able to set the amount of time they have available to complete a chore.
+* User is assigned a random chore based on the chore’s priority and the amount of time the user has available to complete the chore.
+* User is able to mark the chore complete.
+
+Additional Features
+* User is able to add other users as friends.
+* User is able to notify their friends once they’ve completed a chore.
+* User is able to leave comments on their friend’s pages.
+* User is able to customize info on a profile page.
+* User is able to rank themselves against other users.
+* User is able to rank themselves against their friends.
+* User is able to see the top ten users.
+* Users are able to post short videos explaining how to do a task more efficiently.
+* Users are able to create customized chores and them to their list.
+* Users can set sms or email reminders to be sent to them.
+* Users can schedule days and times for chore completion.
+* User can set recurring chores.
+* Post completed chores to facebook
+
+
+Models
+* User
+    * UserId
+    * UserName
+    * Email
+    * Password
+* Chore
+    * ChoreName
+    * Description
+    * Priority
+    * TimeForCompletion
+* ChoreList
