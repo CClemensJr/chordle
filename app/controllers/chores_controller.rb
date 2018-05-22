@@ -12,7 +12,13 @@ class ChoresController < ApplicationController
   end
 
   def create
-    @chore = Chore.create(params[:chore])
+    @chore = Chore.create(chore_params)
+
+    if @chore.save
+      format.html { redirect_to @chore_list, notice: 'Example was successfully created.' }
+    else
+      format.html { render :new }
+    end
   end
 
   def edit
