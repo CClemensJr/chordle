@@ -8,11 +8,11 @@ class ChoresController < ApplicationController
   end
 
   def new
-
+    @chore = Chore.new
   end
 
   def create
-
+    @chore = Chore.create(params[:chore])
   end
 
   def edit
@@ -25,5 +25,11 @@ class ChoresController < ApplicationController
 
   def destroy
 
+  end
+
+  private
+
+  def chore_params
+    params.require(:chore).permit(:name, :description, :priority, :time_for_completion)
   end
 end
