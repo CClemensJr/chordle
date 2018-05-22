@@ -1,4 +1,12 @@
 Chordle
+Steps for building new rails app
+1. What do I want my app to do and what will it look like?
+2. Define your Models
+3. Pick your gems.
+4. Start coding.
+5. Create model associations.
+
+
 
 Minimum Viable Product
 * User is able to log in and log out.
