@@ -10,14 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180523201950) do
+ActiveRecord::Schema.define(version: 20180523203259) do
 
   create_table "chores", force: :cascade do |t|
     t.string "title"
     t.text "details"
     t.string "priority"
-    t.integer "time_to_complere"
-    t.datetime "completed_at"
+    t.integer "time_to_complete"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

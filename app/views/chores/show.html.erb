@@ -16,13 +16,8 @@
 </p>
 
 <p>
-  <strong>Time to complere:</strong>
-  <%= @chore.time_to_complere %>
-</p>
-
-<p>
-  <strong>Completed at:</strong>
-  <%= @chore.completed_at %>
+  <strong>Time to complete:</strong>
+  <%= @chore.time_to_complete.to_s %>
 </p>
 
 <%= link_to 'Edit', edit_chore_path(@chore) %> |
