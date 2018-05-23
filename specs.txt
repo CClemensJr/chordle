@@ -44,4 +44,5 @@ Models
     * Description
     * Priority
     * TimeForCompletion
+    * DateCompleted
 * ChoreList

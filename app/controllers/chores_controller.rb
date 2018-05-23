@@ -15,9 +15,9 @@ class ChoresController < ApplicationController
     @chore = Chore.create(chore_params)
 
     if @chore.save
-      format.html { redirect_to @chore_list, notice: 'Example was successfully created.' }
+      redirect_to action: "chore_lists#index", notice: 'Example was successfully created.'
     else
-      format.html { render :new }
+      render :new
     end
   end
 

@@ -1,3 +1,3 @@
 class Chore < ApplicationRecord
-  belongs_to :chore_list
+  belongs_to :chore_lists
 end
