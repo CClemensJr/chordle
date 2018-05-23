@@ -43,6 +43,6 @@ Models
     * ChoreName
     * Description
     * Priority
-    * TimeForCompletion
+    * TimeToComplete
     * DateCompleted
 * ChoreList
