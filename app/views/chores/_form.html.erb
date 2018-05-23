@@ -1,0 +1,42 @@
+<%= form_with(model: chore, local: true) do |form| %>
+  <% if chore.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(chore.errors.count, "error") %> prohibited this chore from being saved:</h2>
+
+      <ul>
+      <% chore.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :chore_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :details %>
+    <%= form.text_area :details, id: :chore_details %>
+  </div>
+
+  <div class="field">
+    <%= form.label :priority %>
+    <%= form.text_field :priority, id: :chore_priority %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time_to_complere %>
+    <%= form.number_field :time_to_complere, id: :chore_time_to_complere %>
+  </div>
+
+  <div class="field">
+    <%= form.label :completed_at %>
+    <%= form.datetime_select :completed_at, id: :chore_completed_at %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
