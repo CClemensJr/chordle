@@ -23,12 +23,12 @@
 
   <div class="field">
     <%= form.label :priority %>
-    <%= form.text_field :priority, id: :chore_priority %>
+    <%= form.select :priority, ['High', 'Medium', 'Low'], id: :chore_priority %>
   </div>
 
   <div class="field">
     <%= form.label :time_to_complete %>
-    <%= form.number_field :time_to_complete, id: :chore_time_to_complete %>
+    <%= form.select :time_to_complete, [5, 10, 15, 20, 30, 45, 60, 90, 120], id: :chore_time_to_complete %> minutes
   </div>
 
   <div class="actions">
