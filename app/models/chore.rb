@@ -1,5 +1,5 @@
 class Chore < ApplicationRecord
-    def random_chore
-        self.order("RANDOM()").first
+    def self.randomize_chore
+        Chore.order("RANDOM()").first.title
     end
 end

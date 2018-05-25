@@ -5,6 +5,7 @@ class ChoresController < ApplicationController
   # GET /chores.json
   def index
     @chores = Chore.all
+    @random_chore = Chore.randomize_chore
   end
 
   # GET /chores/1

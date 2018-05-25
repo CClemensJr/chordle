@@ -29,6 +29,6 @@
 </table>
 
 <br><hr>
-<h3>Your random chore: <%= Chore.order("RANDOM()").first.title %></h3>
+<h3>Your random chore: <%= @random_chore %></h3>
 
 <%= link_to 'New Chore', new_chore_path %>
