@@ -12,23 +12,19 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :chore_title %>
+    <%= form.select :title, set_chores, id: :chore_title, prompt: "Pick a chore" %>
   </div>
 
   <div class="field">
-    <%= form.label :details %>
-    <%= form.text_area :details, id: :chore_details %>
+    <%= form.text_area :details, id: :chore_details, placeholder: "Add some details if you want" %>
   </div>
 
   <div class="field">
-    <%= form.label :priority %>
-    <%= form.select :priority, set_priority, id: :chore_priority %>
+    <%= form.select :priority, set_priority, id: :chore_priority, prompt: "Whats the priority level?" %>
   </div>
 
   <div class="field">
-    <%= form.label :time_to_complete %>
-    <%= form.select :time_to_complete, set_time_to_complete, id: :chore_time_to_complete %> minutes
+    <%= form.select :time_to_complete, set_time_to_complete, id: :chore_time_to_complete, prompt: "How long do you think it will take?" %> minutes
   </div>
 
   <div class="actions">
