@@ -13,7 +13,7 @@
  $black: #000000;
 
  .container-fluid {
-  
+
  }
 
 .row {
@@ -42,5 +42,31 @@
 }
 
 .main .call-to-action {
-  
+  position: absolute;
+  top: 200px;
+  left: 100px;
+
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+
+  transform: rotate(-20deg);
+
+  border: 3px solid $blue;
+  border-radius: 5px;
+
+  h1 {
+    font-size: 4rem;
+    color: $orange;
+  }
+
+  h2 {
+    font-family: 'Shadows Into Light', cursive;
+    color: $pink;
+  }
+
+  p {
+    font-family: 'Butterfly Kids', cursive;
+    font-size: 2rem;
+    color: $orange;
+  }
 }
