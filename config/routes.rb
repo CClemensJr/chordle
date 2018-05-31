@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   resources :chores
   resources :pages
 
+  get "chores/random_chore" => 'chores#random_chore', as: :random_chore 
+
   root "pages#home"
 end

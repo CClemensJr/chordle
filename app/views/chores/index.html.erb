@@ -30,4 +30,8 @@
 
 <br><hr>
 
-<%= link_to 'New Chore', new_chore_path %> | <%= link_to 'Receive a chore', '#', data: { confirm: ("Chordle says: #{@random_chore}") } %>
+<%= link_to 'New Chore', new_chore_path %> |
+<%= link_to 'Receive a chore', '#', data: { confirm: ("Chordle says: #{@random_chore}") } %> |
+<%= link_to 'Receive a newer chore', random_chore_path, { remote: true, 'data-toggle' => 'modal', 'data-target' => '#modal-window' } %>
+
+<div id="modal-window" class="modal hide fade" role="dialog" aria-labelledby="myModalLabal" aria-hidden="true"></div>
