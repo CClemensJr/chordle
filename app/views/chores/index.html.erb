@@ -29,6 +29,5 @@
 </table>
 
 <br><hr>
-<h3>Your random chore: <%= @random_chore %></h3>
 
-<%= link_to 'New Chore', new_chore_path %>
+<%= link_to 'New Chore', new_chore_path %> | <%= link_to 'Receive a chore', '#', data: { confirm: ("Your random chore: #{@random_chore}")} %>
