@@ -63,6 +63,8 @@ class ChoresController < ApplicationController
   end
 
   def random_chore
+    @random_chore = Chore.randomize_chore
+    
     respond_to do |format|
       format.html
       format.js
