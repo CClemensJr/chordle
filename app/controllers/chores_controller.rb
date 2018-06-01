@@ -62,15 +62,6 @@ class ChoresController < ApplicationController
     end
   end
 
-  def random_chore
-    @random_chore = Chore.randomize_chore
-    
-    respond_to do |format|
-      format.html
-      format.js
-    end
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_chore
