@@ -1,3 +1,5 @@
 <h1>Welcome</h1><%= button_to "Logout", logout_path, method: :delete %>
 
 It's currently <%= Time.now %> and we currently have <%= pluralize(@total_chores, "chore") %> left to conquer.
+
+<%= render template: "/chores/index" %>
