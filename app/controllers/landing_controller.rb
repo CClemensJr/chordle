@@ -3,6 +3,6 @@ class LandingController < ApplicationController
     @total_chores = Chore.count
     @chores = Chore.all
     @random_chore = Chore.randomize_chore
-    @user = User.find(params[:id])
+    @current_user = User.find(params[:id])
   end
 end
